@@ -1,6 +1,6 @@
-import breadImg from './bread.jpg';
-import cupcakeImg from './cupcake.jpg';
-import crossImg from './cros.jpg';
+import breadImg from './img/bread.jpg';
+import cupcakeImg from './img/cupcake.jpg';
+import crossImg from './img/cros.jpg';
 
 function heading() {
     const heading = document.createElement('h1');

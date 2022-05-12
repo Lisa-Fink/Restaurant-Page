@@ -6,7 +6,7 @@
   }
 
 body {
-    background: url('./background.jpg');
+    background: url('./img/background.jpg');
     background-size: cover;
     color: black;
     font-family: 'MyFont';
