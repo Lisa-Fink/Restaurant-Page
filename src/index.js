@@ -1,7 +1,6 @@
 import './style.css';
-import background from './background.jpg'
 import createHeader from './nav.js';
-import createHome from './home.js';
+import {createHome} from './home.js';
 import createMenu from './menu';
 import createContact from './contact';
 
