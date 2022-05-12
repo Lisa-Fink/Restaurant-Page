@@ -1,5 +1,3 @@
-import { createHome } from "./home";
-
 function createHeader() {
     const header = document.getElementById('header');
     const nav = document.createElement('nav');
