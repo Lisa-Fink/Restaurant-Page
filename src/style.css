@@ -78,7 +78,7 @@ nav > button {
     font-family: 'MyFont';
 }
 
-nav > button:hover{
+nav > button:hover, #form input[type="submit"]:hover{
     color: lightskyblue;
     background-color: gray;
 }
@@ -105,3 +105,20 @@ ul {
     margin-left: 40px;
 }
 
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin: 55px auto;
+    gap:25px;
+}
+
+#form input, #form textarea {
+    padding: 15px;
+}
+
+#form input[type="submit"] {
+    font-size: 28px;
+    border: 1px black solid;
+    border-radius: 15px;
+}
