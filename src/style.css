@@ -62,7 +62,7 @@ nav {
     display: flex;
     gap: 15px;
     margin-left: 100px;
-    margin-top: 60px;
+    margin-top: 50px;
 }   
 
 nav > button {
@@ -110,7 +110,7 @@ ul {
     display: flex;
     flex-direction: column;
     width: 360px;
-    margin: 150px auto 0 auto;
+    margin: 0 auto 0 auto;
     gap:25px;
 }
 
@@ -147,3 +147,4 @@ ul {
     background-clip: padding-box;
   }
 
+  

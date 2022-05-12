@@ -3,7 +3,11 @@ import { heading } from "./home";
 function contactForm() {
     const inputArr = ['Full Name*', 'Phone*', 'Email*', 'Message*'];
     const form = document.createElement('form');
-    form.id = 'form'
+    form.id = 'form';
+
+    const formTitle = document.createElement('h4');
+    formTitle.innerText = 'Send us a message:';
+    form.appendChild(formTitle);
 
     inputArr.forEach(input => {
         const formInput = input != 'Message*' ? document.createElement('input') :
@@ -29,7 +33,16 @@ function createContact () {
     content.appendChild(heading());
     const subHeading = document.createElement('h2');
     subHeading.innerText = 'Contact';
+
+    const contactTel = document.createElement('p');
+    const contactEmail = document.createElement('p');
+
+    contactTel.innerText = 'Phone: 555-555-BAKE';
+    contactEmail.innerText = 'Email: BakeShop@BellasBakeShop.com';
+
     content.appendChild(subHeading);
+    content.appendChild(contactTel);
+    content.appendChild(contactEmail);
     content.appendChild(contactForm());
 
 }
