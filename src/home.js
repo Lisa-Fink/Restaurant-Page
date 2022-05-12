@@ -29,7 +29,7 @@ function image() {
 }
 
 function copy() {
-    const copy = document.createElement('h2');
+    const copy = document.createElement('h3');
     copy.innerText = 'Creating the finest baked goods for 45 years';
     return copy;
 }
@@ -45,7 +45,7 @@ function hours() {
             'Saturday: 6am-10pm',
     ]
 
-    const hoursHeading = document.createElement('h3');
+    const hoursHeading = document.createElement('h4');
     hoursHeading.innerText = 'Hours';
 
     const ul = document.createElement('ul');
@@ -63,7 +63,7 @@ function hours() {
 }
 
 function location() {
-    const locHeading = document.createElement('h3');
+    const locHeading = document.createElement('h4');
     locHeading.innerText = 'Location';
 
     const address = document.createElement('span');

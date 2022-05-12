@@ -19,14 +19,18 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 50px;
     margin: 0;
 }
 
 h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+h4 {
     font-size: 28px;
     margin: 15px 0;
-    font-family: 'MyFont';
 }
 
 #content {

@@ -14,7 +14,7 @@ function createSection(arr){
 function coffeMenu() {
     const coffeeArr = ['Latte', 'Cappuccino', 'Cafe Mocha', 'Cafe Bella']
     
-    const heading = document.createElement('h2')
+    const heading = document.createElement('h3')
     heading.innerText = 'Coffee Specialties'
     
     const coffee = document.createElement('div')
@@ -28,7 +28,7 @@ function cafeMenu() {
     const cafeArr = ['Spinach Quiche', 'Quiche Lorraine', 'Buffalo Chicken Sandwich', 
             'Tuna Melt', 'Soup of the Day']
 
-    const heading = document.createElement('h2')
+    const heading = document.createElement('h3')
     heading.innerText = 'Cafe Menu'
 
     const cafe= document.createElement('div')
@@ -60,7 +60,7 @@ function bakeryMenu(){
         }  
     ]
 
-    const heading = document.createElement('h2')
+    const heading = document.createElement('h3')
     heading.innerText = 'Baked Goods'
     const bakery = document.createElement('div')
     bakery.classList.add('menu')
@@ -68,7 +68,7 @@ function bakeryMenu(){
 
     menus.forEach(section => {
         const sectionDiv = document.createElement('div')
-        const heading = document.createElement('h3')
+        const heading = document.createElement('h4')
         heading.innerText = section.title
         sectionDiv.appendChild(heading)
         sectionDiv.appendChild(createSection(section.arr))
@@ -81,10 +81,10 @@ function bakeryMenu(){
 
 function createMenu() {
     const content = document.getElementById('content');
-    const header = heading()
-    header.innerHTML += '<br>Menu'
-    
-    content.appendChild(header)
+    content.appendChild(heading())
+    const subHeading = document.createElement('h2');
+    subHeading.innerText = 'Menu'
+    content.appendChild(subHeading)
     content.appendChild(coffeMenu())
     content.appendChild(cafeMenu())
     content.appendChild(bakeryMenu())
