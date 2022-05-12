@@ -4,6 +4,7 @@ function createHeader() {
     
     const home = document.createElement('button');
     home.id = 'home';
+    home.classList.add('selected')
     home.innerText = " Home ";
     
     const menu = document.createElement('button');
@@ -19,8 +20,5 @@ function createHeader() {
     nav.appendChild(contact);
     header.appendChild(nav);
 } 
-
-
-
 
 export default createHeader;

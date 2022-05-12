@@ -36,6 +36,8 @@ h4 {
 #content {
     background-color: rgba(245, 245, 245, 0.5);
     width: 860px;
+    height: 862px;
+    overflow-y: auto;
     border-radius: 30px;
     border: rgb(38, 42, 42) 2px solid;
     padding: 15px 50px;
@@ -84,8 +86,8 @@ nav > button:hover, #form input[type="submit"]:hover{
 }
 
 .selected {
-    background-color: gray;
-    color: lightskyblue;
+    background-color: lightskyblue;
+    color: black;
 }
 
 ul {
@@ -98,7 +100,6 @@ ul {
     text-align: left;
     width: 360px;
     margin: 40px auto;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 .home-info > span {
@@ -109,7 +110,7 @@ ul {
     display: flex;
     flex-direction: column;
     width: 360px;
-    margin: 55px auto;
+    margin: 150px auto;
     gap:25px;
 }
 
@@ -122,3 +123,22 @@ ul {
     border: 1px black solid;
     border-radius: 15px;
 }
+
+::-webkit-scrollbar {
+    width: 40px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray; ; 
+    border: 10px solid transparent;
+    border-radius: 32px;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: skyblue; 
+    border: 10px solid transparent;
+    border-radius: 32px;
+    background-clip: padding-box;
+  }
+
