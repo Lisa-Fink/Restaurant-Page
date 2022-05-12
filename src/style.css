@@ -19,12 +19,12 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 40px;
     margin: 0;
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 28px;
     margin: 15px 0;
     font-family: 'MyFont';
 }
@@ -56,7 +56,7 @@ nav {
     display: flex;
     gap: 15px;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 60px;
 }   
 
 nav > button {
@@ -87,9 +87,10 @@ nav > button:hover{
 ul {
     list-style: none;
     margin: 0;
+    text-align: left;
 }
 
-.home-info {
+.home-info, .menu {
     text-align: left;
     width: 360px;
     margin: 40px auto;
@@ -99,3 +100,4 @@ ul {
 .home-info > span {
     margin-left: 40px;
 }
+
