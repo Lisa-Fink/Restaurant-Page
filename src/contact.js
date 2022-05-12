@@ -6,12 +6,12 @@ function contactForm() {
     form.id = 'form'
 
     inputArr.forEach(input => {
-        const formInput = input != 'Message' ? document.createElement('input') :
+        const formInput = input != 'Message*' ? document.createElement('input') :
             document.createElement('textarea');
         formInput.placeholder = input;
-        input == 'Phone' ? (formInput.type = 'tel', 
+        input == 'Phone*' ? (formInput.type = 'tel', 
             formInput.pattern = "[0-9]{3}-*[0-9]{3}-*[0-9]{4}"): 
-            input == 'Email' ? formInput.type = 'email' : null;
+            input == 'Email*' ? formInput.type = 'email' : null;
         formInput.required = true
         form.appendChild(formInput);
     })

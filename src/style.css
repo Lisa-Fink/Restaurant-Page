@@ -110,11 +110,11 @@ ul {
     display: flex;
     flex-direction: column;
     width: 360px;
-    margin: 150px auto;
+    margin: 150px auto 0 auto;
     gap:25px;
 }
 
-#form input, #form textarea {
+#form input{
     padding: 15px;
 }
 
@@ -122,6 +122,11 @@ ul {
     font-size: 28px;
     border: 1px black solid;
     border-radius: 15px;
+}
+
+#form textarea {
+    height: 80px;
+    padding: 15px;
 }
 
 ::-webkit-scrollbar {
